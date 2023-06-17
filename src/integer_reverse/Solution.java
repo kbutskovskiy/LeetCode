@@ -1,8 +1,5 @@
 package integer_reverse;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static java.lang.Math.abs;
 
 public class Solution {
