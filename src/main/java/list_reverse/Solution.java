@@ -1,31 +1,23 @@
 package list_reverse;
 
-import java.util.*;
-
-
 public class Solution {
+
     public static class ListNode {
+
         int val;
         ListNode next;
-
-        ListNode() {
-        }
 
         ListNode(int val) {
             this.val = val;
         }
 
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 
     public static ListNode reverseList(ListNode head) {
         ListNode curr = head;
         ListNode prev = null;
 
-        while (curr != null){
+        while (curr != null) {
             ListNode nextNode = curr.next;
             curr.next = prev;
             prev = curr;
@@ -40,14 +32,14 @@ public class Solution {
         head.next.next = new ListNode(3);
         head.next.next.next = null;
         ListNode curr = head;
-        while (curr.next != null){
+        while (curr.next != null) {
             System.out.print(curr.val + " -> ");
             curr = curr.next;
         }
         System.out.println(curr.val);
         head = reverseList(head);
         curr = head;
-        while (curr.next != null){
+        while (curr.next != null) {
             System.out.print(curr.val + " -> ");
             curr = curr.next;
         }
