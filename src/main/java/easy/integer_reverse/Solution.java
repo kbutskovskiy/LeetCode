@@ -1,4 +1,4 @@
-package integer_reverse;
+package easy.integer_reverse;
 
 import static java.lang.Math.abs;
 

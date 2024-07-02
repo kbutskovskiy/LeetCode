@@ -1,4 +1,4 @@
-package list_reverse;
+package easy.list_reverse;
 
 public class Solution {
 

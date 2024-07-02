@@ -1,4 +1,4 @@
-package longest_prefix;
+package easy.longest_prefix;
 
 class Solution {
 
